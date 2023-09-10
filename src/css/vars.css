@@ -1,0 +1,8 @@
+:root {
+  --white: #fff;
+  --gray: #bcbcbc;
+  --black: #0e0e0e;
+
+  --circle: #f1f1f1;
+  --background-1: linear-gradient(90deg, rgb(26, 26, 26) 0%, rgba(8,8,8,1) 100%);
+}

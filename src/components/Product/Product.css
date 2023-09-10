@@ -1,0 +1,83 @@
+/* Product */
+.product {
+  margin-top: -40px;
+}
+
+.product-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+}
+
+.product-img {
+  position: relative;
+
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.product-img img {
+  animation: hoverAnim 4s infinite ease-in-out;
+}
+
+.product-info {
+  z-index: 9;
+  position: absolute;
+  max-width: 450px;
+
+  display: flex;
+  align-items: last baseline;
+  gap: 100px;
+
+  left: 30%;
+  bottom: 0;
+}
+
+.product-info__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.product-name {
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  background-color: var(--black);
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.product-desc {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+/* Keyframes */
+@keyframes hoverAnim {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

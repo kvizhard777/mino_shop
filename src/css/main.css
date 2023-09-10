@@ -1,0 +1,27 @@
+@import 'reset.css';
+@import 'vars.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  color: var(--white);
+  background-image: var(--background-1);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  color: var(--white);
+}
+
+/* Swiper */
+.swiper-button-prev, .swiper-button-next {
+  color: var(--white) !important;
+}
