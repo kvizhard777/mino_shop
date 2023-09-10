@@ -23,6 +23,8 @@ const Main = () => {
             name="Black Futbolka"
             price="399"
             desc="Отличная футболка с крутым дизайном"
+            bigText1="Black"
+            bigText2="Black"
           />
         </SwiperSlide>
 
@@ -33,6 +35,8 @@ const Main = () => {
             name="White Futbolka"
             price="299"
             desc="Отличная футболка с крутым дизайном"
+            bigText1="White"
+            bigText2="White"
           />
         </SwiperSlide>
 

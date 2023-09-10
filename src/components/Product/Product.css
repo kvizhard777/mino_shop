@@ -20,6 +20,35 @@
   max-height: 500px;
 }
 
+.product-img__txt {
+  z-index: 8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 150px;
+  font-weight: 600;
+
+  -webkit-text-stroke: 2px var(--white);
+
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.product-img__text {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 150px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
 .product-img img {
   animation: hoverAnim 4s infinite ease-in-out;
 }
