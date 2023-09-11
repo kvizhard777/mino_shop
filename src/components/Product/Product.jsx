@@ -22,7 +22,7 @@ const Product = ({ img, alt, price, desc, name, bigText1, bigText2 }) => {
               <p className="product-desc">{desc}</p>
             </div>
 
-            <MainBtn text="Заказать" link="#" />
+            <MainBtn text="Заказать" link="https://t.me/mino_autorize" />
           </div>
 
         </div>
