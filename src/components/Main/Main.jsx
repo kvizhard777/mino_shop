@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Main.css'
 import Product from '../Product/Product'
 
@@ -8,6 +8,17 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 const Main = () => {
+  const [products, setProducts] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    fetch('https://650028e118c34dee0cd467bc.mockapi.io/products')
+      .then(response => response.json())
+      .then(data => setProducts(data))
+      .catch(e => console.log(e))
+      .finally(() => setIsLoading(false))
+  }, [])
+
   return (
     <main className="main">
       <Swiper
@@ -16,29 +27,26 @@ const Main = () => {
         navigation
       >
 
-        <SwiperSlide>
-          <Product
-            img='./2.png'
-            alt="Product"
-            name="Black Futbolka"
-            price="399"
-            desc="Отличная футболка с крутым дизайном"
-            bigText1="Black"
-            bigText2="Black"
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Product
-            img='./1.png'
-            alt="Product"
-            name="White Futbolka"
-            price="299"
-            desc="Отличная футболка с крутым дизайном"
-            bigText1="White"
-            bigText2="White"
-          />
-        </SwiperSlide>
+        {
+          isLoading
+            ? (<span className='loading'>Загрузка...</span>)
+            : (
+                products.map((product) => (
+                  <SwiperSlide>
+                    <Product
+                      key={product.id}
+                      img={product.img}
+                      alt="Product"
+                      name={product.name}
+                      price={product.price}
+                      desc={product.desc}
+                      bigText1={product.bigText1}
+                      bigText2={product.bigText2}
+                    />
+                  </SwiperSlide>
+                ))
+              )
+        }
 
       </Swiper>
     </main>

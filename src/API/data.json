@@ -1,0 +1,31 @@
+[
+  {
+   "id": 1,
+   "img": "https://i.imgur.com/yoQcSlI.png",
+   "name": "Black Futbolka",
+   "desc": "Отличная футболка с крутым дизайном",
+   "price": 399,
+   "bigText1": "Black",
+   "bigText2": "Black"
+  },
+
+  {
+    "id": 2,
+    "img": "https://i.imgur.com/t32sdX5.png",
+    "name": "White Futbolka",
+    "desc": "Отличная футболка с крутым дизайном",
+    "price": 299,
+    "bigText1": "White",
+    "bigText2": "White"
+   },
+
+   {
+    "id": 3,
+    "img": "https://i.imgur.com/od429JE.png",
+    "name": "Black Futbolka",
+    "desc": "Отличная футболка с крутым дизайном",
+    "price": 599,
+    "bigText1": "Black",
+    "bigText2": "Black"
+   }
+]

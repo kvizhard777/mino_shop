@@ -1,4 +1,14 @@
+/* Main */
 .main {
   margin-left: 20px;
   margin-right: 20px;
+
+  position: relative;
+}
+
+/* Loading */
+.loading {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 40px;
 }
