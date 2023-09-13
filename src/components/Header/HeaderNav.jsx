@@ -11,10 +11,6 @@ const HeaderNav = () => {
       <a href="https://www.instagram.com/made.innorthossetia/" target='_blank' className="nav__item">
         <Icon icon="ri:instagram-fill" />
       </a>
-
-      <a href="#" target='_blank' className="nav__item">
-        <Icon icon="ic:baseline-facebook" />
-      </a>
     </nav>
   )
 }
